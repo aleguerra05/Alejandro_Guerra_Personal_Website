@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
+import TechIcon from "../components/TechIcon.astro";
+
 import { getCollection } from "astro:content";
 import { Icon } from 'astro-icon';
 
@@ -39,96 +41,35 @@ const last_posts = posts.slice(0, 3);
       </text>
     </div>
 
-    <div class="flex" style="justify-content: center; align-items: center; flex-wrap: wrap;">
+    <div class="flex" style="justify-content: center; align-items: center; flex-wrap: wrap;">  
+      <TechIcon iconName="logos:nodejs-icon" url="https://nodejs.org"/>
+      <TechIcon iconName="logos:java" url="https://nodejs.org"/>
+      <TechIcon iconName="logos:spring-icon" url="https://nodejs.org"/>
+      <TechIcon iconName="logos:dotnet" url="https://nodejs.org"/>
+      <TechIcon iconName="mdi:laravel" url="https://nodejs.org"/>
       
-      <a href="https://nodejs.org" target="_blank" class="mx-3 my-3 hover:scale-[115%] transition">
-        <Icon name="logos:nodejs-icon" width="48"/>
-      </a>
+      <TechIcon iconName="logos:oracle" url="https://nodejs.org"/>
+      <TechIcon iconName="logos:mysql-icon" url="https://nodejs.org"/>
 
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:angular-icon" width="48" />
-      </a>
+      <TechIcon iconName="logos:angular-icon" url="https://angular.io"/>
+      <TechIcon iconName="logos:javascript" url="https://nodejs.org"/>
+      <TechIcon iconName="logos:flutter" url="https://nodejs.org"/>
+      <TechIcon iconName="logos:android-icon" url="https://nodejs.org"/>
 
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:oracle" width="48" />
-      </a>
-
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:mysql-icon" width="48" />
-      </a>
+      <TechIcon iconName="logos:git" url="https://nodejs.org"/>
+      <TechIcon iconName="logos:gitlab" url="https://nodejs.org"/>
+      <TechIcon iconName="logos:github-icon" url="https://nodejs.org"/>
       
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:visual-studio-code" width="48" />
-      </a>
-
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:flutter" height="48" />
-      </a>
-
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:gitlab" width="48" />
-      </a>
-
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:github-icon" width="48" />
-      </a>
-
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:docker-icon" width="48" />
-      </a>
-
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:android-icon" width="48" />
-      </a>
-
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:aws" width="48" />
-      </a>
-
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="simple-icons:grafana" width="48" />
-      </a>
-
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:dotnet" width="48" />
-      </a>
+      <TechIcon iconName="logos:docker-icon" url="https://nodejs.org"/>
+      <TechIcon iconName="logos:rancher-icon" url="https://nodejs.org"/>
+      <TechIcon iconName="logos:aws" url="https://nodejs.org"/>
+      <TechIcon iconName="logos:google-play-icon" url="https://nodejs.org"/>
       
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:java" width="48" />
-      </a>
-      
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:javascript" width="48" />
-      </a>
-
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:rancher-icon" width="48" />
-      </a>
-
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:spring-icon" width="48" />
-      </a>
-
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:git" width="48" />
-      </a>
-
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:google-play-icon" width="48" />
-      </a>
-
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:linux-tux" height="48" />
-      </a>
-
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="logos:microsoft-windows" height="48" />
-      </a>
-
-      <a href="https://angular.io" target="_blank" class="mx-3 hover:scale-[115%] transition">
-        <Icon name="mdi:laravel" height="48" />
-      </a>
-
+      <TechIcon iconName="simple-icons:grafana" url="https://nodejs.org"/>
+      <TechIcon iconName="logos:visual-studio-code" url="https://nodejs.org"/>
+            
+      <TechIcon iconName="logos:linux-tux" url="https://nodejs.org"/>
+      <TechIcon iconName="logos:microsoft-windows" url="https://nodejs.org"/>
     </div>
 <!-- 
     <div>

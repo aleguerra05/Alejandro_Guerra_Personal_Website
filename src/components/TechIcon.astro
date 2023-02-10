@@ -1,0 +1,8 @@
+---
+import { Icon } from 'astro-icon';
+const { url, iconName, target = '_blank' } = Astro.props;
+---
+
+<a href={url} target={target} class="mx-3 my-3 hover:scale-[115%] transition">
+    <Icon name={iconName} height="48" width="48"/>
+</a>
